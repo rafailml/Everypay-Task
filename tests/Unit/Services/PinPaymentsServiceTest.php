@@ -238,6 +238,7 @@ class PinPaymentsServiceTest extends TestCase
             'Test order'
         );
 
+        // !! According to PinPayments documentation it should be Pending
         $this->assertEquals('Pending',
             $result->getData()->message);
     }
